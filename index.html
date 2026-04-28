@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio — Dev &amp; Leader</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='6' fill='%239D50BB'/><text x='5' y='24' font-size='19' fill='%23FCD116'>⚡</text></svg>" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700;800;900&family=Lexend+Mega:wght@700;800;900&display=swap" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+ 
+  <div class="noise-overlay" aria-hidden="true"></div>
+  <div class="cursor" id="cursor" aria-hidden="true"></div>
+  <div class="cursor-follower" id="cursorFollower" aria-hidden="true"></div>
+  <button class="back-top" id="backTop" aria-label="Back to top"><i class="ri-arrow-up-line"></i></button>
+ 
+  <!-- ════ NAVBAR ════ -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-inner">
+      <a href="#home" class="nav-logo">
+        <span class="lb">&lt;</span><span class="ln">Dev</span><span class="ls">/</span><span class="ld">Leader</span><span class="lb">&gt;</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#journey">Journey</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="nav-right">
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle light/dark mode" title="Toggle Theme">
+          <i class="ri-sun-line" id="iconSun"></i>
+          <i class="ri-moon-line" id="iconMoon"></i>
+        </button>
+        <button class="hamburger" id="hamburger" aria-label="Open navigation menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#journey">Journey</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+ 
+  <!-- ════ HERO ════ -->
+  <section class="hero" id="home">
+    <div class="orb orb-1" aria-hidden="true"></div>
+    <div class="orb orb-2" aria-hidden="true"></div>
+    <div class="orb orb-3" aria-hidden="true"></div>
+ 
+    <div class="hero-grid container">
+      <!-- Text -->
+      <div class="hero-text">
+        <div class="hero-badge reveal-fade">
+          <span class="badge-pulse"></span>
+          3rd Year BSIT &nbsp;·&nbsp; Youth Leader &nbsp;·&nbsp; SAP Certified
+        </div>
+ 
+        <h1 class="hero-headline reveal-up">
+          Merging<br />
+          <span class="grad-text">Systems</span><br />
+          with <span class="yellow-text">Leadership</span>
+        </h1>
+ 
+        <div class="typing-wrap reveal-fade" aria-label="Dynamic role description">
+          <span class="typing-prefix">I am a&nbsp;</span>
+          <span class="typing-out" id="typingText" aria-live="polite"></span>
+          <span class="typing-cur" aria-hidden="true">|</span>
+        </div>
+ 
+        <p class="hero-bio reveal-fade">
+          SAP Certified developer and community servant building meaningful digital solutions
+          for schools and barangays — while leading the youth of Zone 3B, Bicol Region.
+        </p>
+ 
+        <div class="hero-ctas reveal-fade">
+          <a href="#projects" class="btn-primary"><i class="ri-code-s-slash-line"></i> View Projects</a>
+          <a href="assets/cv.pdf" class="btn-cv magnetic" id="cvBtn" download>
+            <i class="ri-download-2-line"></i><span>Download CV</span>
+            <div class="btn-shine" aria-hidden="true"></div>
+          </a>
+        </div>
+ 
+        <div class="hero-stats reveal-fade">
+          <div class="hs"><span class="hs-n" data-target="3">0</span><span class="hs-l">Projects</span></div>
+          <div class="hs-div" aria-hidden="true"></div>
+          <div class="hs"><span class="hs-n" data-target="3">0</span><span class="hs-l">Languages</span></div>
+          <div class="hs-div" aria-hidden="true"></div>
+          <div class="hs"><span class="hs-n" data-target="1">0</span><span class="hs-l">SAP Cert</span></div>
+        </div>
+      </div>
+ 
+      <!-- Photo — clean, no text overlay -->
+      <div class="hero-visual reveal-scale">
+        <div class="photo-frame">
+          <div class="photo-ring"  aria-hidden="true"></div>
+          <div class="photo-ring ring-2" aria-hidden="true"></div>
+          <img src="assets/profile.jpg" alt="Professional headshot of portfolio owner" class="profile-img" loading="eager" />
+        </div>
+        <!-- Social pill row beneath photo -->
+        <div class="photo-socials">
+          <a href="https://github.com/" target="_blank" rel="noopener" aria-label="GitHub"><i class="ri-github-line"></i></a>
+          <a href="https://linkedin.com/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="ri-linkedin-line"></i></a>
+          <a href="https://facebook.com/" target="_blank" rel="noopener" aria-label="Facebook"><i class="ri-facebook-line"></i></a>
+          <a href="mailto:your.email@example.com" aria-label="Email"><i class="ri-mail-line"></i></a>
+        </div>
+      </div>
+    </div>
+ 
+    <div class="scroll-hint reveal-fade" aria-hidden="true">
+      <div class="scroll-line"></div><span>Scroll</span>
+    </div>
+  </section>
+ 
+  <!-- ════ ABOUT ════ -->
+  <section class="section about" id="about">
+    <div class="container">
+      <div class="section-label reveal-fade"><span class="sec-line"></span>About Me</div>
+      <h2 class="section-title reveal-up">Building the future,<br /><em class="grad-text">one commit at a time.</em></h2>
+ 
+      <div class="about-grid">
+        <div class="about-left reveal-left">
+          <p>I'm a <strong>3rd Year Bachelor of Science in Information Technology</strong> student with a passion for building systems that create real-world impact — from school portals to barangay management platforms.</p>
+          <p>Beyond the screen, I serve my community as an <strong>SK Kagawad</strong> and <strong>Zone 3B Youth President</strong>, bridging technology with public service in Bicol Region.</p>
+          <p>I hold an <strong>SAP Certification</strong> and am currently pursuing <strong>IAS (Information Assurance &amp; Security)</strong> to deepen my enterprise and security knowledge.</p>
+          <div class="chip-row reveal-fade">
+            <span class="chip chip-p"><i class="ri-shield-star-line"></i> SAP Certified</span>
+            <span class="chip chip-p"><i class="ri-book-2-line"></i> IAS In Progress</span>
+            <span class="chip chip-y"><i class="ri-group-line"></i> Youth Leader</span>
+            <span class="chip chip-y"><i class="ri-flag-line"></i> SK Kagawad</span>
+            <span class="chip chip-p"><i class="ri-map-pin-line"></i> Bicol Region, PH</span>
+          </div>
+        </div>
+        <div class="about-right reveal-right">
+          <div class="glass-card acard">
+            <i class="ri-graduation-cap-line acard-ico"></i>
+            <h4>Education</h4>
+            <p>3rd Year BSIT — specializing in systems development, database management, and enterprise software integration.</p>
+          </div>
+          <div class="glass-card acard">
+            <i class="ri-community-line acard-ico"></i>
+            <h4>Community</h4>
+            <p>Zone 3B Youth President &amp; SK Kagawad — advocating for youth empowerment and digital literacy in Bicol.</p>
+          </div>
+          <div class="glass-card acard">
+            <i class="ri-award-line acard-ico"></i>
+            <h4>Certifications</h4>
+            <p>SAP Certified Professional. Pursuing IAS — combining cybersecurity with enterprise systems expertise.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+ 
+  <!-- ════ SKILLS ════ -->
+  <section class="section skills" id="skills">
+    <div class="container">
+      <div class="section-label reveal-fade"><span class="sec-line"></span>Technical Stack</div>
+      <h2 class="section-title centered reveal-up">Tools of the <em class="grad-text">Trade</em></h2>
+      <p class="section-sub reveal-fade">Languages, platforms, and tools I work with daily.</p>
+ 
+      <div class="skills-grid">
+        <div class="glass-card sg reveal-up" style="--d:0s">
+          <div class="sg-hdr"><i class="ri-code-s-slash-line"></i><h4>Languages</h4></div>
+          <div class="sbars">
+            <div class="sb"><div class="sb-meta"><span>C#</span><span class="sb-pct">88%</span></div><div class="sb-track"><div class="sb-fill" data-w="88"></div></div></div>
+            <div class="sb"><div class="sb-meta"><span>SQL</span><span class="sb-pct">85%</span></div><div class="sb-track"><div class="sb-fill" data-w="85"></div></div></div>
+            <div class="sb"><div class="sb-meta"><span>Java</span><span class="sb-pct">78%</span></div><div class="sb-track"><div class="sb-fill" data-w="78"></div></div></div>
+            <div class="sb"><div class="sb-meta"><span>HTML / CSS</span><span class="sb-pct">82%</span></div><div class="sb-track"><div class="sb-fill" data-w="82"></div></div></div>
+            <div class="sb"><div class="sb-meta"><span>JavaScript</span><span class="sb-pct">70%</span></div><div class="sb-track"><div class="sb-fill" data-w="70"></div></div></div>
+          </div>
+        </div>
+ 
+        <div class="glass-card sg reveal-up" style="--d:0.1s">
+          <div class="sg-hdr"><i class="ri-building-4-line"></i><h4>Enterprise &amp; DB</h4></div>
+          <div class="pills">
+            <span class="pill pill-gold"><i class="ri-verified-badge-fill"></i> SAP ERP</span>
+            <span class="pill">SQL Server</span><span class="pill">MySQL</span><span class="pill">Oracle DB</span>
+            <span class="pill">ERD Design</span><span class="pill">Data Modeling</span>
+            <span class="pill pill-p">IAS (In Progress)</span>
+          </div>
+        </div>
+ 
+        <div class="glass-card sg reveal-up" style="--d:0.2s">
+          <div class="sg-hdr"><i class="ri-tools-line"></i><h4>Tools &amp; Platforms</h4></div>
+          <div class="pills">
+            <span class="pill">Visual Studio</span><span class="pill">IntelliJ IDEA</span>
+            <span class="pill">VS Code</span><span class="pill">Git &amp; GitHub</span>
+            <span class="pill">Figma</span><span class="pill">NetBeans</span><span class="pill">MS Office</span>
+          </div>
+        </div>
+ 
+        <div class="glass-card sg reveal-up" style="--d:0.3s">
+          <div class="sg-hdr"><i class="ri-user-star-line"></i><h4>Leadership Skills</h4></div>
+          <div class="pills">
+            <span class="pill pill-p">Public Speaking</span><span class="pill pill-p">Event Management</span>
+            <span class="pill pill-p">Project Management</span><span class="pill pill-p">Community Organizing</span>
+            <span class="pill pill-p">Policy Drafting</span><span class="pill pill-p">Team Leadership</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+ 
+  <!-- ════ PROJECTS (minimum 3) ════ -->
+  <section class="section projects" id="projects">
+    <div class="container">
+      <div class="section-label reveal-fade"><span class="sec-line"></span>Featured Work</div>
+      <h2 class="section-title centered reveal-up">Projects That <em class="grad-text">Matter</em></h2>
+      <p class="section-sub reveal-fade">Real systems built for real communities — designed, developed, and deployed.</p>
+ 
+      <!-- Filter Buttons (optional for higher grades) -->
+      <div class="proj-filters reveal-fade" role="group" aria-label="Filter projects">
+        <button class="fbtn active" data-filter="all">All</button>
+        <button class="fbtn" data-filter="desktop">Desktop</button>
+        <button class="fbtn" data-filter="web">Web</button>
+        <button class="fbtn" data-filter="system">System</button>
+      </div>
+ 
+      <div class="projects-grid" id="projectsGrid">
+ 
+        <!-- Project 1: Hi5 Portal -->
+        <article class="glass-card proj-card reveal-up" data-cat="desktop system" style="--d:0s">
+          <div class="proj-preview" style="background:linear-gradient(135deg,#1a0a2e,#2d1060);">
+            <div class="proj-mock">
+              <div class="mock-bar"><span></span><span></span><span></span></div>
+              <div class="mock-body">
+                <div class="mock-side"></div>
+                <div class="mock-main">
+                  <div class="mr w80"></div><div class="mr w60"></div><div class="mr w90"></div>
+                  <div class="mock-tbl"><div class="mtr"></div><div class="mtr"></div><div class="mtr"></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="proj-body">
+            <div class="proj-top">
+              <div class="proj-ico"><i class="ri-school-line"></i></div>
+              <div class="proj-bgs">
+                <span class="badge-live"><span class="ldot"></span>Live</span>
+                <span class="badge-cat">Desktop</span>
+              </div>
+            </div>
+            <h3 class="proj-title">Hi5 Portal</h3>
+            <p class="proj-sub">School Management System</p>
+            <p class="proj-desc">A comprehensive desktop-based school management platform featuring student records, grade tracking, enrollment management, and faculty monitoring — digitizing school administration workflows.</p>
+            <ul class="proj-feats">
+              <li><i class="ri-check-line"></i> Student Records Management</li>
+              <li><i class="ri-check-line"></i> Grade &amp; Enrollment System</li>
+              <li><i class="ri-check-line"></i> Faculty &amp; Staff Module</li>
+              <li><i class="ri-check-line"></i> Automated Report Generation</li>
+            </ul>
+            <div class="proj-stack">
+              <span>C#</span><span>SQL Server</span><span>WinForms</span><span>.NET</span>
+            </div>
+            <div class="proj-actions">
+              <a href="https://github.com/" target="_blank" rel="noopener" class="btn-sm-out"><i class="ri-github-line"></i> GitHub</a>
+              <a href="#" class="btn-sm-fill"><i class="ri-eye-line"></i> Live Demo</a>
+            </div>
+          </div>
+        </article>
+ 
+        <!-- Project 2: Platonian's IS -->
+        <article class="glass-card proj-card reveal-up" data-cat="desktop system" style="--d:0.12s">
+          <div class="proj-preview" style="background:linear-gradient(135deg,#0a1520,#0d2a42);">
+            <div class="proj-mock">
+              <div class="mock-bar"><span></span><span></span><span></span></div>
+              <div class="mock-body">
+                <div class="mock-side"></div>
+                <div class="mock-main">
+                  <div class="mr w70"></div>
+                  <div style="display:flex;gap:5px;margin:6px 0;">
+                    <div class="mcrd" style="background:rgba(29,78,216,0.35);"></div>
+                    <div class="mcrd" style="background:rgba(29,78,216,0.35);"></div>
+                    <div class="mcrd" style="background:rgba(29,78,216,0.35);"></div>
+                  </div>
+                  <div class="mock-tbl"><div class="mtr"></div><div class="mtr"></div><div class="mtr"></div><div class="mtr"></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="proj-body">
+            <div class="proj-top">
+              <div class="proj-ico" style="background:rgba(29,78,216,0.14);border-color:rgba(29,78,216,0.3);color:#60a5fa;">
+                <i class="ri-archive-2-line"></i>
+              </div>
+              <div class="proj-bgs">
+                <span class="badge-live"><span class="ldot"></span>Live</span>
+                <span class="badge-cat">Desktop</span>
+              </div>
+            </div>
+            <h3 class="proj-title">Platonian's IS</h3>
+            <p class="proj-sub">School Inventory Management System</p>
+            <p class="proj-desc">A desktop-based inventory management system built for Platonian's school organization — centralizing asset tracking, stock monitoring, and item requests to eliminate manual record-keeping and reduce resource loss.</p>
+            <ul class="proj-feats">
+              <li><i class="ri-check-line"></i> Asset &amp; Equipment Tracking</li>
+              <li><i class="ri-check-line"></i> Stock-In / Stock-Out Monitoring</li>
+              <li><i class="ri-check-line"></i> Item Request &amp; Approval Workflow</li>
+              <li><i class="ri-check-line"></i> Inventory Reports &amp; Logs</li>
+            </ul>
+            <div class="proj-stack">
+              <span>C#</span><span>SQL Server</span><span>WinForms</span><span>.NET</span>
+            </div>
+            <div class="proj-actions">
+              <a href="https://github.com/" target="_blank" rel="noopener" class="btn-sm-out"><i class="ri-github-line"></i> GitHub</a>
+              <a href="#" class="btn-sm-fill"><i class="ri-eye-line"></i> Live Demo</a>
+            </div>
+          </div>
+        </article>
+ 
+        <!-- Project 3: Simple Calculator -->
+        <article class="glass-card proj-card reveal-up" data-cat="web" style="--d:0.24s">
+          <div class="proj-preview" style="background:linear-gradient(135deg,#1a0d00,#2d1f00);">
+            <div class="proj-mock">
+              <div class="mock-bar"><span></span><span></span><span></span></div>
+              <div class="mock-body" style="align-items:center;justify-content:center;padding:8px;">
+                <!-- Mini calculator wireframe -->
+                <div style="width:80px;background:rgba(0,0,0,0.4);border-radius:8px;padding:6px;display:flex;flex-direction:column;gap:4px;">
+                  <div style="height:16px;background:rgba(252,209,22,0.18);border-radius:4px;margin-bottom:2px;display:flex;align-items:center;justify-content:flex-end;padding:0 5px;">
+                    <div style="width:30px;height:5px;background:rgba(252,209,22,0.5);border-radius:2px;"></div>
+                  </div>
+                  <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:3px;">
+                    <div style="height:8px;background:rgba(255,255,255,0.12);border-radius:2px;"></div>
+                    <div style="height:8px;background:rgba(255,255,255,0.12);border-radius:2px;"></div>
+                    <div style="height:8px;background:rgba(255,255,255,0.12);border-radius:2px;"></div>
+                    <div style="height:8px;background:rgba(157,80,187,0.5);border-radius:2px;"></div>
+                    <div style="height:8px;background:rgba(255,255,255,0.12);border-radius:2px;"></div>
+                    <div style="height:8px;background:rgba(255,255,255,0.12);border-radius:2px;"></div>
+                    <div style="height:8px;background:rgba(255,255,255,0.12);border-radius:2px;"></div>
+                    <div style="height:8px;background:rgba(157,80,187,0.5);border-radius:2px;"></div>
+                    <div style="height:8px;background:rgba(255,255,255,0.12);border-radius:2px;"></div>
+                    <div style="height:8px;background:rgba(255,255,255,0.12);border-radius:2px;"></div>
+                    <div style="height:8px;background:rgba(255,255,255,0.12);border-radius:2px;"></div>
+                    <div style="height:8px;background:rgba(252,209,22,0.5);border-radius:2px;"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="proj-body">
+            <div class="proj-top">
+              <div class="proj-ico proj-ico-y"><i class="ri-calculator-line"></i></div>
+              <div class="proj-bgs">
+                <span class="badge-live"><span class="ldot"></span>Live</span>
+                <span class="badge-cat">Web</span>
+              </div>
+            </div>
+            <h3 class="proj-title">Simple Calculator</h3>
+            <p class="proj-sub">Interactive Web Calculator</p>
+            <p class="proj-desc">A clean, responsive calculator web app built with vanilla HTML, CSS, and JavaScript — supporting basic arithmetic operations with a polished UI, keyboard input support, and smooth button animations.</p>
+            <ul class="proj-feats">
+              <li><i class="ri-check-line"></i> Addition, Subtraction, Multiply &amp; Divide</li>
+              <li><i class="ri-check-line"></i> Keyboard Input Support</li>
+              <li><i class="ri-check-line"></i> Chained Calculations &amp; Clear Function</li>
+              <li><i class="ri-check-line"></i> Responsive &amp; Mobile-Friendly UI</li>
+            </ul>
+            <div class="proj-stack">
+              <span>HTML</span><span>CSS</span><span>JavaScript</span>
+            </div>
+            <div class="proj-actions">
+              <a href="https://github.com/" target="_blank" rel="noopener" class="btn-sm-out"><i class="ri-github-line"></i> GitHub</a>
+              <a href="#" class="btn-sm-fill"><i class="ri-eye-line"></i> Live Demo</a>
+            </div>
+          </div>
+        </article>
+ 
+      </div><!-- /projects-grid -->
+    </div>
+  </section>
+ 
+  <!-- ════ CERTIFICATIONS ════ -->
+  <section class="section certs" id="certs">
+    <div class="container">
+      <div class="section-label reveal-fade"><span class="sec-line"></span>Credentials</div>
+      <h2 class="section-title centered reveal-up">Certifications &amp; <em class="grad-text">Recognition</em></h2>
+      <div class="certs-grid">
+        <div class="glass-card cert-card reveal-up" style="--d:0s">
+          <div class="cert-ico cert-ico-y"><i class="ri-award-fill"></i></div>
+          <div>
+            <span class="cert-src">SAP</span>
+            <h4>SAP Certified Professional</h4>
+            <p>Enterprise Resource Planning certification validating ERP expertise used by Fortune 500 companies worldwide.</p>
+            <span class="cbadge cbadge-y">⚡ Verified Credential</span>
+          </div>
+        </div>
+        <div class="glass-card cert-card reveal-up" style="--d:0.1s">
+          <div class="cert-ico cert-ico-p"><i class="ri-time-line"></i></div>
+          <div>
+            <span class="cert-src">In Progress</span>
+            <h4>IAS Certification</h4>
+            <p>Information Assurance &amp; Security — bridging cybersecurity knowledge with enterprise systems development.</p>
+            <span class="cbadge cbadge-p">🔄 In Progress</span>
+          </div>
+        </div>
+        <div class="glass-card cert-card reveal-up" style="--d:0.2s">
+          <div class="cert-ico cert-ico-g"><i class="ri-shield-check-line"></i></div>
+          <div>
+            <span class="cert-src">Government</span>
+            <h4>SK Kagawad</h4>
+            <p>Elected Sangguniang Kabataan Kagawad — representing youth constituents in local legislative processes.</p>
+            <span class="cbadge cbadge-g">✅ Active Position</span>
+          </div>
+        </div>
+        <div class="glass-card cert-card reveal-up" style="--d:0.3s">
+          <div class="cert-ico cert-ico-g"><i class="ri-user-star-line"></i></div>
+          <div>
+            <span class="cert-src">Community</span>
+            <h4>Zone 3B Youth President</h4>
+            <p>Leading Zone 3B youth sector — organizing programs, campaigns, and digital literacy initiatives in Bicol.</p>
+            <span class="cbadge cbadge-g">✅ Active Position</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+ 
+  <!-- ════ JOURNEY / TIMELINE ════ -->
+  <section class="section journey" id="journey">
+    <div class="container">
+      <div class="section-label reveal-fade"><span class="sec-line"></span>My Journey</div>
+      <h2 class="section-title centered reveal-up">The <em class="grad-text">Path</em> So Far</h2>
+      <p class="section-sub reveal-fade">A timeline of growth — as a student, developer, and public servant.</p>
+ 
+      <div class="timeline">
+        <div class="tl-spine" id="tlSpine" aria-hidden="true"></div>
+ 
+        <div class="tl-item tl-l reveal-tl">
+          <div class="tl-dot" aria-hidden="true"></div>
+          <div class="glass-card tl-card">
+            <span class="tl-yr">2022</span>
+            <h4>Started BSIT</h4>
+            <p>Enrolled in Bachelor of Science in IT — discovered a passion for C# and database systems design.</p>
+            <div class="tl-tags"><span>C#</span><span>SQL</span><span>Fundamentals</span></div>
+          </div>
+        </div>
+        <div class="tl-item tl-r reveal-tl">
+          <div class="tl-dot" aria-hidden="true"></div>
+          <div class="glass-card tl-card">
+            <span class="tl-yr">2022</span>
+            <h4>Elected SK Kagawad</h4>
+            <p>Elected as Sangguniang Kabataan Kagawad — began serving youth through local governance.</p>
+            <div class="tl-tags"><span>Leadership</span><span>Governance</span></div>
+          </div>
+        </div>
+        <div class="tl-item tl-l reveal-tl">
+          <div class="tl-dot" aria-hidden="true"></div>
+          <div class="glass-card tl-card">
+            <span class="tl-yr">2023</span>
+            <h4>Hi5 Portal Launched</h4>
+            <p>Developed Hi5 Portal — a full-featured School Management System streamlining student records and workflows.</p>
+            <div class="tl-tags"><span>C#</span><span>SQL Server</span><span>WinForms</span></div>
+          </div>
+        </div>
+        <div class="tl-item tl-r reveal-tl">
+          <div class="tl-dot" aria-hidden="true"></div>
+          <div class="glass-card tl-card">
+            <span class="tl-yr">2023</span>
+            <h4>SAP Certification Earned</h4>
+            <p>Earned SAP Certification — gaining enterprise-level ERP expertise used by top global companies.</p>
+            <div class="tl-tags"><span class="tag-y">⚡ SAP Certified</span></div>
+          </div>
+        </div>
+        <div class="tl-item tl-l reveal-tl">
+          <div class="tl-dot" aria-hidden="true"></div>
+          <div class="glass-card tl-card">
+            <span class="tl-yr">2024</span>
+            <h4>Zone 3B Youth President</h4>
+            <p>Appointed as Zone 3B Youth President — expanded community programs and digital literacy campaigns.</p>
+            <div class="tl-tags"><span>Youth Leadership</span><span>Advocacy</span></div>
+          </div>
+        </div>
+        <div class="tl-item tl-r reveal-tl">
+          <div class="tl-dot" aria-hidden="true"></div>
+          <div class="glass-card tl-card">
+            <span class="tl-yr">2024</span>
+            <h4>e-Baliuag Nuevo Deployed</h4>
+            <p>Built e-Baliuag Nuevo — a Barangay Management System digitizing local government services for residents.</p>
+            <div class="tl-tags"><span>Java</span><span>MySQL</span><span>Barangay Systems</span></div>
+          </div>
+        </div>
+        <div class="tl-item tl-l reveal-tl">
+          <div class="tl-dot tl-dot-now" aria-hidden="true"></div>
+          <div class="glass-card tl-card tl-card-now">
+            <span class="tl-yr tl-yr-now">2025 — Present</span>
+            <h4>IAS &amp; SK Youth Portal</h4>
+            <p>Pursuing IAS certification, developing the SK Youth Portal web platform, and exploring cloud architectures.</p>
+            <div class="tl-tags"><span>IAS</span><span>Web Dev</span><span>Cloud</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+ 
+  <!-- ════ INTERESTS / BENTO ════ -->
+  <section class="section interests" id="interests">
+    <div class="container">
+      <div class="section-label reveal-fade"><span class="sec-line"></span>Beyond the Code</div>
+      <h2 class="section-title centered reveal-up">Interests &amp; <em class="grad-text">Passions</em></h2>
+      <div class="bento-grid">
+        <div class="bento-cell bento-gaming glass-card reveal-bento" style="--d:0s">
+          <span class="bento-em" aria-hidden="true">🎮</span>
+          <h3>Gaming</h3>
+          <p>Strategy &amp; RPG games sharpen problem-solving and logical thinking — skills that make a great developer.</p>
+          <span class="bento-tag">Level Up Mindset</span>
+        </div>
+        <div class="bento-cell bento-nature glass-card reveal-bento" style="--d:0.1s">
+          <span class="bento-em" aria-hidden="true">🌿</span>
+          <h3>Nature</h3>
+          <p>Hiking trails and open skies recharge what caffeine can't. Bicol's landscapes inspire grounded thinking.</p>
+          <span class="bento-tag">Stay Grounded</span>
+        </div>
+        <div class="bento-cell bento-reading glass-card reveal-bento" style="--d:0.2s">
+          <span class="bento-em" aria-hidden="true">📚</span>
+          <h3>Reading</h3>
+          <p>From tech docs to governance books — reading fuels both the developer and the leader within.</p>
+          <span class="bento-tag">Always Learning</span>
+        </div>
+        <div class="bento-cell bento-travel glass-card reveal-bento" style="--d:0.3s">
+          <span class="bento-em" aria-hidden="true">✈️</span>
+          <h3>Traveling</h3>
+          <p>Every destination brings new perspective — empathy is the core trait of human-centered design.</p>
+          <span class="bento-tag">New Perspectives</span>
+        </div>
+        <div class="bento-cell bento-quote glass-card reveal-bento" style="--d:0.4s">
+          <span class="qmark" aria-hidden="true">"</span>
+          <p>The best developers code for people, not machines. Technology is only as good as the human problem it solves.</p>
+          <span class="qattr">— Personal Philosophy</span>
+        </div>
+        <div class="bento-cell bento-vals glass-card reveal-bento" style="--d:0.5s">
+          <h4>Core Values</h4>
+          <div class="val-list">
+            <div class="vi"><span class="vdot" aria-hidden="true"></span>Service Above Self</div>
+            <div class="vi"><span class="vdot" aria-hidden="true"></span>Continuous Learning</div>
+            <div class="vi"><span class="vdot" aria-hidden="true"></span>Community First</div>
+            <div class="vi"><span class="vdot" aria-hidden="true"></span>Tech for Good</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+ 
+  <!-- ════ CONTACT (with required form) ════ -->
+  <section class="section contact" id="contact">
+    <div class="container">
+      <div class="section-label reveal-fade"><span class="sec-line"></span>Get In Touch</div>
+      <h2 class="section-title centered reveal-up">Let's Build Something <em class="grad-text">Meaningful</em></h2>
+      <p class="section-sub reveal-fade">Open to collaborations, developer roles, or community partnerships.</p>
+ 
+      <div class="contact-layout">
+ 
+        <!-- Info + CV CTA -->
+        <div class="contact-info reveal-left">
+          <div class="cv-cta glass-card">
+            <span class="cv-lbl">Resumé Available</span>
+            <h3>Download My CV</h3>
+            <p>A full overview of my skills, projects, and community work in one document.</p>
+            <a href="assets/cv.pdf" class="btn-cv-big magnetic" download>
+              <i class="ri-download-2-line"></i><span>Download CV</span>
+              <div class="btn-shine" aria-hidden="true"></div>
+            </a>
+          </div>
+          <div class="clinks">
+            <a href="mailto:your.email@example.com" class="clink glass-card">
+              <i class="ri-mail-line"></i>
+              <div><span class="cl-l">Email</span><span class="cl-v">your.email@example.com</span></div>
+              <i class="ri-arrow-right-up-line cl-arr" aria-hidden="true"></i>
+            </a>
+            <a href="https://github.com/" target="_blank" rel="noopener" class="clink glass-card">
+              <i class="ri-github-line"></i>
+              <div><span class="cl-l">GitHub</span><span class="cl-v">github.com/yourusername</span></div>
+              <i class="ri-arrow-right-up-line cl-arr" aria-hidden="true"></i>
+            </a>
+            <a href="https://linkedin.com/" target="_blank" rel="noopener" class="clink glass-card">
+              <i class="ri-linkedin-box-line"></i>
+              <div><span class="cl-l">LinkedIn</span><span class="cl-v">linkedin.com/in/yourusername</span></div>
+              <i class="ri-arrow-right-up-line cl-arr" aria-hidden="true"></i>
+            </a>
+            <a href="https://facebook.com/" target="_blank" rel="noopener" class="clink glass-card">
+              <i class="ri-facebook-box-line"></i>
+              <div><span class="cl-l">Facebook</span><span class="cl-v">facebook.com/yourusername</span></div>
+              <i class="ri-arrow-right-up-line cl-arr" aria-hidden="true"></i>
+            </a>
+          </div>
+        </div>
+ 
+        <!-- REQUIRED: Contact Form -->
+        <div class="contact-form-wrap reveal-right">
+          <form class="glass-card contact-form" id="contactForm" novalidate>
+            <h3 class="form-title"><i class="ri-send-plane-line"></i> Send a Message</h3>
+ 
+            <div class="fg">
+              <label for="fName">Full Name <span class="req" aria-hidden="true">*</span></label>
+              <div class="iw">
+                <i class="ri-user-line" aria-hidden="true"></i>
+                <input type="text" id="fName" name="name" placeholder="Your full name" required autocomplete="name" />
+              </div>
+              <span class="ferr" id="errName" role="alert" aria-live="polite"></span>
+            </div>
+ 
+            <div class="fg">
+              <label for="fEmail">Email Address <span class="req" aria-hidden="true">*</span></label>
+              <div class="iw">
+                <i class="ri-mail-line" aria-hidden="true"></i>
+                <input type="email" id="fEmail" name="email" placeholder="your@email.com" required autocomplete="email" />
+              </div>
+              <span class="ferr" id="errEmail" role="alert" aria-live="polite"></span>
+            </div>
+ 
+            <div class="fg">
+              <label for="fSubject">Subject</label>
+              <div class="iw">
+                <i class="ri-file-text-line" aria-hidden="true"></i>
+                <input type="text" id="fSubject" name="subject" placeholder="What is this about?" autocomplete="off" />
+              </div>
+            </div>
+ 
+            <div class="fg">
+              <label for="fMsg">Message <span class="req" aria-hidden="true">*</span></label>
+              <div class="iw iw-ta">
+                <i class="ri-chat-3-line" aria-hidden="true"></i>
+                <textarea id="fMsg" name="message" rows="5" placeholder="Tell me about your project or opportunity…" required></textarea>
+              </div>
+              <span class="ferr" id="errMsg" role="alert" aria-live="polite"></span>
+            </div>
+ 
+            <button type="submit" class="btn-submit" id="submitBtn">
+              <span class="sub-txt"><i class="ri-send-plane-line"></i> Send Message</span>
+              <span class="sub-load" aria-hidden="true"><i class="ri-loader-4-line spin"></i> Sending…</span>
+            </button>
+ 
+            <div class="form-fb" id="formFb" role="alert" aria-live="polite"></div>
+          </form>
+        </div>
+ 
+      </div>
+    </div>
+  </section>
+ 
+  <!-- ════ FOOTER ════ -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <p class="footer-logo"><span class="lb">&lt;</span>Dev<span class="ls">/</span>Leader<span class="lb">&gt;</span></p>
+      <p class="footer-copy">© 2025 · Built with 💜 &amp; ⚡ · 3rd Year BSIT · Zone 3B Youth President</p>
+      <p class="footer-tag">Merging Systems with Leadership — one line of code at a time.</p>
+    </div>
+  </footer>
+ 
+  <script src="script.js"></script>
+</body>
+</html>
