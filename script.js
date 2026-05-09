@@ -105,7 +105,7 @@
  
   const phrases = [
     'Systems Developer',
-    'SAP Certified Professional',
+    'SAP Certified',
     'Youth Leader & SK Kagawad',
     'Zone 3B Youth President',
     'IAS Aspirant',
