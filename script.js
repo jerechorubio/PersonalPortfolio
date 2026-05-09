@@ -461,4 +461,3 @@ console.log(
   'color:#FCD116;font-weight:800;font-size:14px;background:#0D0D0D;padding:8px 14px;border-radius:6px 6px 0 0;display:block;',
   'color:#9D50BB;font-size:12px;background:#0D0D0D;padding:4px 14px 8px;border-radius:0 0 6px 6px;display:block;'
 );
- 

@@ -249,6 +249,15 @@ em.grad-text{font-style:italic;}
 ══════════════════════════════════════ */
 .projects{background:rgba(157,80,187,.02);}
  
+/* ── Project Image Placeholder ── */
+.proj-img-wrap{width:100%;height:180px;border-radius:var(--r-md) var(--r-md) 0 0;overflow:hidden;position:relative;background:var(--bg-2);}
+.proj-img{width:100%;height:100%;object-fit:cover;object-position:top center;display:block;transition:transform .4s var(--ease);}
+.proj-card:hover .proj-img{transform:scale(1.04);}
+.proj-img-placeholder{width:100%;height:100%;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;border:2px dashed var(--border-h);border-radius:var(--r-md) var(--r-md) 0 0;background:repeating-linear-gradient(45deg,transparent,transparent 8px,rgba(157,80,187,0.04) 8px,rgba(157,80,187,0.04) 16px);}
+.proj-img-placeholder i{font-size:2rem;color:var(--p1);opacity:.6;}
+.proj-img-placeholder span{font-size:.78rem;font-weight:700;color:var(--text-3);letter-spacing:.08em;text-transform:uppercase;}
+.proj-img-placeholder small{font-size:.62rem;color:var(--text-3);opacity:.7;font-family:monospace;padding:3px 8px;background:rgba(157,80,187,0.08);border:1px solid var(--border);border-radius:4px;max-width:90%;text-align:center;line-height:1.5;}
+ 
 /* Filter buttons */
 .proj-filters{display:flex;gap:.5rem;justify-content:center;margin-bottom:2.5rem;flex-wrap:wrap;}
 .fbtn{padding:7px 18px;border-radius:30px;border:1px solid var(--border);background:transparent;color:var(--text-2);font-size:.8rem;font-weight:600;transition:var(--t);cursor:none;}
