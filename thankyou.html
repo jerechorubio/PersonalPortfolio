@@ -8,7 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;600;700;800&family=Lexend+Mega:wght@800;900&display=swap" rel="stylesheet" />
- 
+
   <style>
     /* ── Variables ── */
     :root {
@@ -20,9 +20,9 @@
       --text: #F2F2F2;
       --text2:#A8A8A8;
     }
- 
+
     * { box-sizing: border-box; margin: 0; padding: 0; }
- 
+
     body {
       background: var(--bg);
       color: var(--text);
@@ -34,7 +34,7 @@
       overflow: hidden;
       position: relative;
     }
- 
+
     /* ── Animated Background ── */
     .bg-grid {
       position: fixed;
@@ -46,12 +46,12 @@
       animation: gridMove 20s linear infinite;
       z-index: 0;
     }
- 
+
     @keyframes gridMove {
       0%   { transform: translateY(0); }
       100% { transform: translateY(50px); }
     }
- 
+
     /* ── Orbs ── */
     .orb {
       position: fixed;
@@ -78,13 +78,13 @@
       top: 40%; left: 10%;
       animation: orbFloat 14s ease-in-out infinite 2s;
     }
- 
+
     @keyframes orbFloat {
       0%,100% { transform: translate(0,0); }
       33%      { transform: translate(20px,-30px); }
       66%      { transform: translate(-15px,20px); }
     }
- 
+
     /* ── Particles ── */
     .particles {
       position: fixed;
@@ -104,7 +104,7 @@
       90%  { opacity: 0.5; }
       100% { transform: translateY(100vh) scale(1); opacity: 0; }
     }
- 
+
     /* ── Main Card ── */
     .card {
       position: relative;
@@ -124,12 +124,12 @@
         inset 0 1px 0 rgba(255,255,255,0.05);
       animation: cardIn 0.8s cubic-bezier(0.22,1,0.36,1) both;
     }
- 
+
     @keyframes cardIn {
       from { opacity: 0; transform: translateY(40px) scale(0.95); }
       to   { opacity: 1; transform: translateY(0) scale(1); }
     }
- 
+
     /* ── Check Icon ── */
     .check-wrap {
       width: 90px; height: 90px;
@@ -143,12 +143,12 @@
       position: relative;
       animation: checkPop 0.6s cubic-bezier(0.22,1,0.36,1) 0.3s both;
     }
- 
+
     @keyframes checkPop {
       from { transform: scale(0) rotate(-180deg); opacity: 0; }
       to   { transform: scale(1) rotate(0deg); opacity: 1; }
     }
- 
+
     .check-wrap::before {
       content: '';
       position: absolute;
@@ -157,7 +157,7 @@
       border: 1px solid rgba(157,80,187,0.2);
       animation: ripple 2s ease-out infinite;
     }
- 
+
     .check-wrap::after {
       content: '';
       position: absolute;
@@ -166,22 +166,22 @@
       border: 1px solid rgba(157,80,187,0.1);
       animation: ripple 2s ease-out infinite 0.4s;
     }
- 
+
     @keyframes ripple {
       0%   { transform: scale(1); opacity: 1; }
       100% { transform: scale(1.3); opacity: 0; }
     }
- 
+
     .check-icon {
       font-size: 2.4rem;
       animation: iconPop 0.4s cubic-bezier(0.22,1,0.36,1) 0.7s both;
     }
- 
+
     @keyframes iconPop {
       from { transform: scale(0); }
       to   { transform: scale(1); }
     }
- 
+
     /* ── Tag ── */
     .tag {
       display: inline-flex;
@@ -199,16 +199,16 @@
       margin-bottom: 1.25rem;
       animation: fadeUp 0.6s ease 0.5s both;
     }
- 
+
     .tag-dot {
       width: 6px; height: 6px;
       background: var(--y);
       border-radius: 50%;
       animation: blink 1s step-end infinite;
     }
- 
+
     @keyframes blink { 0%,100%{opacity:1;} 50%{opacity:0;} }
- 
+
     /* ── Heading ── */
     .heading {
       font-family: 'Lexend Mega', sans-serif;
@@ -218,16 +218,16 @@
       margin-bottom: 0.75rem;
       animation: fadeUp 0.6s ease 0.6s both;
     }
- 
+
     .heading .grad {
       background: linear-gradient(135deg, #9D50BB, #6E48AA);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
       background-clip: text;
     }
- 
+
     .heading .yl { color: var(--y); }
- 
+
     /* ── Sub text ── */
     .subtext {
       color: var(--text2);
@@ -236,7 +236,7 @@
       margin-bottom: 2rem;
       animation: fadeUp 0.6s ease 0.7s both;
     }
- 
+
     /* ── Divider ── */
     .divider {
       height: 1px;
@@ -244,7 +244,7 @@
       margin-bottom: 2rem;
       animation: fadeUp 0.6s ease 0.75s both;
     }
- 
+
     /* ── Countdown ── */
     .countdown-wrap {
       display: flex;
@@ -254,7 +254,7 @@
       margin-bottom: 2rem;
       animation: fadeUp 0.6s ease 0.8s both;
     }
- 
+
     .countdown-label {
       font-size: 0.78rem;
       color: var(--text2);
@@ -262,35 +262,35 @@
       text-transform: uppercase;
       font-weight: 600;
     }
- 
+
     /* ── Number display ── */
     .countdown-num {
       font-family: 'Lexend Mega', sans-serif;
-      font-size: 4rem;
+      font-size: 2rem;
       font-weight: 900;
       color: var(--y);
       line-height: 1;
       position: relative;
-      width: 100px; height: 100px;
+      width: 60px; height: 60px;
       display: flex;
       align-items: center;
       justify-content: center;
-      filter: drop-shadow(0 0 20px rgba(252,209,22,0.5));
+      filter: drop-shadow(0 0 12px rgba(252,209,22,0.5));
     }
- 
+
     /* Circular progress ring */
     .ring-svg {
       position: absolute;
       inset: 0;
       transform: rotate(-90deg);
     }
- 
+
     .ring-track {
       fill: none;
       stroke: rgba(157,80,187,0.15);
       stroke-width: 4;
     }
- 
+
     .ring-fill {
       fill: none;
       stroke: url(#ringGrad);
@@ -300,22 +300,22 @@
       stroke-dashoffset: 0;
       transition: stroke-dashoffset 1s linear;
     }
- 
+
     .num-text {
       position: relative;
       z-index: 1;
       transition: all 0.3s cubic-bezier(0.22,1,0.36,1);
     }
- 
+
     .num-text.pop {
       animation: numPop 0.4s cubic-bezier(0.22,1,0.36,1);
     }
- 
+
     @keyframes numPop {
       0%   { transform: scale(1.4); }
       100% { transform: scale(1); }
     }
- 
+
     /* Progress bar */
     .progress-bar-wrap {
       width: 100%;
@@ -325,7 +325,7 @@
       overflow: hidden;
       margin-top: 0.5rem;
     }
- 
+
     .progress-bar-fill {
       height: 100%;
       border-radius: 10px;
@@ -334,18 +334,18 @@
       transform-origin: left;
       transition: transform 1s linear;
     }
- 
+
     /* ── Redirect text ── */
     .redirect-text {
       font-size: 0.82rem;
       color: var(--text2);
     }
- 
+
     .redirect-text span {
       color: var(--p3);
       font-weight: 600;
     }
- 
+
     /* ── Back Button ── */
     .back-btn {
       display: inline-flex;
@@ -366,12 +366,12 @@
       cursor: pointer;
       border: none;
     }
- 
+
     .back-btn:hover {
       transform: translateY(-2px);
       box-shadow: 0 8px 30px rgba(157,80,187,0.6);
     }
- 
+
     /* ── Footer tag ── */
     .footer-tag {
       position: fixed;
@@ -384,55 +384,55 @@
       white-space: nowrap;
       z-index: 10;
     }
- 
+
     @keyframes fadeUp {
       from { opacity: 0; transform: translateY(20px); }
       to   { opacity: 1; transform: translateY(0); }
     }
- 
- 
+
+
   </style>
 </head>
 <body>
- 
+
   <!-- Background -->
   <div class="bg-grid"></div>
   <div class="orb orb-1"></div>
   <div class="orb orb-2"></div>
   <div class="orb orb-3"></div>
   <div class="particles" id="particles"></div>
- 
+
   <!-- Main Card -->
   <div class="card">
- 
+
     <!-- Check Icon -->
     <div class="check-wrap">
       <span class="check-icon">✅</span>
     </div>
- 
+
     <!-- Tag -->
     <div class="tag">
       <span class="tag-dot"></span>
-      Message Delivered
+      Message Delivered!
     </div>
- 
+
     <!-- Heading -->
     <h1 class="heading">
       <span class="grad">Thank</span> <span class="yl">You!</span>
     </h1>
- 
+
     <!-- Sub -->
     <p class="subtext">
       Your message has been sent successfully.<br />
-      I'll get back to you as soon as possible. 💜
+      I'll get back to you as soon as possible.
     </p>
- 
+
     <div class="divider"></div>
- 
+
     <!-- Countdown -->
     <div class="countdown-wrap">
       <span class="countdown-label">Redirecting you back in</span>
- 
+
       <!-- Circular ring countdown -->
       <div class="countdown-num">
         <svg class="ring-svg" viewBox="0 0 100 100">
@@ -447,7 +447,7 @@
         </svg>
         <span class="num-text" id="countNum">5</span>
       </div>
- 
+
       <!-- Linear progress bar -->
       <div style="width:100%;animation:fadeUp .6s ease .85s both;">
         <div class="progress-bar-wrap">
@@ -458,48 +458,48 @@
         </p>
       </div>
     </div>
- 
+
     <!-- Manual back button -->
     <a href="https://personal-portfolio-psi-gilt-42.vercel.app" class="back-btn" id="backBtn">
       ← Go Back Now
     </a>
- 
+
   </div>
- 
+
   <!-- Footer -->
   <p class="footer-tag">⚡ Dev / Leader Portfolio — Merging Systems with Leadership</p>
- 
+
   <script>
     const REDIRECT_URL = 'https://personal-portfolio-psi-gilt-42.vercel.app';
     const TOTAL = 5;
- 
+
     /* ── Countdown ── */
     const numEl      = document.getElementById('countNum');
     const ringFill   = document.getElementById('ringFill');
     const progressBar= document.getElementById('progressBar');
     const CIRCUMFERENCE = 2 * Math.PI * 45; // ≈ 282.7
- 
+
     ringFill.style.strokeDasharray  = CIRCUMFERENCE;
     ringFill.style.strokeDashoffset = 0;
- 
+
     let count = TOTAL;
- 
+
     function updateRing(remaining) {
       const pct    = remaining / TOTAL;
       const offset = CIRCUMFERENCE * (1 - pct);
       ringFill.style.strokeDashoffset = offset;
       progressBar.style.transform = `scaleX(${pct})`;
     }
- 
+
     function tick() {
       // Pop animation on number
       numEl.classList.remove('pop');
       void numEl.offsetWidth; // reflow
       numEl.classList.add('pop');
       numEl.textContent = count;
- 
+
       updateRing(count);
- 
+
       if (count <= 0) {
         window.location.href = REDIRECT_URL;
         return;
@@ -507,14 +507,14 @@
       count--;
       setTimeout(tick, 1000);
     }
- 
+
     // Start after card animates in
     setTimeout(tick, 900);
- 
+
     /* ── Floating particles ── */
     const particlesEl = document.getElementById('particles');
     const colors = ['#9D50BB', '#6E48AA', '#FCD116', '#B06CE0', '#FFB300'];
- 
+
     for (let i = 0; i < 25; i++) {
       const p = document.createElement('div');
       p.className = 'particle';
@@ -530,9 +530,9 @@
       `;
       particlesEl.appendChild(p);
     }
- 
- 
+
+
   </script>
- 
+
 </body>
 </html>
