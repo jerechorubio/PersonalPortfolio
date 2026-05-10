@@ -408,32 +408,22 @@
   });
  
   form.addEventListener('submit', e => {
-    e.preventDefault();
- 
+
     // Run all validations
     validateName(); validateEmail(); validateMsg();
- 
+
     const hasError = errName.textContent || errEmail.textContent || errMsg.textContent;
-    if (hasError) return;
- 
-    // Simulate sending (replace with real EmailJS / FormSubmit / fetch)
+    
+    // If errors — block and stop
+    if (hasError) {
+      e.preventDefault();
+      return;
+    }
+
+    // If all valid — let form submit naturally to Formsubmit ✅
     submitBtn.classList.add('loading');
     submitBtn.disabled = true;
-    fb.className = 'form-fb';
-    fb.textContent = '';
- 
-    setTimeout(() => {
-      submitBtn.classList.remove('loading');
-      submitBtn.disabled = false;
- 
-      // Success state
-      fb.className = 'form-fb success';
-      fb.textContent = '✅ Message sent! Thank you. I\'ll get back to you soon.';
-      form.reset();
- 
-      // Clear success after 6s
-      setTimeout(() => { fb.className = 'form-fb'; fb.textContent = ''; }, 6000);
-    }, 1800);
+
   });
 })();
  
