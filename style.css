@@ -1,8 +1,6 @@
-/* ══════════════════════════════════════
-   style.css — Portfolio
-   ══════════════════════════════════════ */
+/*style.css — Portfolio*/
  
-/* ── CSS Variables: Dark Theme (default) ── */
+/*CSS Variables: Dark Theme (default) */
 :root {
   --bg:          #0D0D0D;
   --bg-2:        #1A1A1A;
@@ -95,9 +93,8 @@ ul{list-style:none;}
 .yellow-text{color:var(--y);}
 em.grad-text{font-style:italic;}
  
-/* ══════════════════════════════════════
-   NAVBAR
-══════════════════════════════════════ */
+/*NAVBAR*/
+
 .navbar{position:fixed;top:0;left:0;right:0;height:var(--nav-h);z-index:1000;background:rgba(13,13,13,0.5);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);border-bottom:1px solid transparent;transition:background .3s,border-color .3s;}
 [data-theme="light"] .navbar{background:rgba(244,244,248,0.7);}
 .navbar.scrolled{background:rgba(13,13,13,0.94);border-color:var(--border);}
@@ -136,9 +133,7 @@ em.grad-text{font-style:italic;}
 [data-theme="light"] .mobile-menu a{border-color:rgba(0,0,0,.04);}
 .mobile-menu a:hover{color:var(--p1);}
  
-/* ══════════════════════════════════════
-   HERO
-══════════════════════════════════════ */
+/* HERO */
 .hero{min-height:100vh;display:flex;align-items:center;padding:calc(var(--nav-h)+2rem) 2rem 4rem;position:relative;overflow:visible;}
 .orb{position:fixed;border-radius:50%;pointer-events:none;z-index:0;filter:blur(80px);}
 .orb-1{width:500px;height:500px;background:radial-gradient(circle,rgba(157,80,187,.1) 0%,transparent 70%);top:-80px;right:-80px;animation:orbFloat 9s ease-in-out infinite;}
@@ -201,9 +196,7 @@ em.grad-text{font-style:italic;}
 .scroll-line{width:1px;height:38px;background:linear-gradient(to bottom,var(--p1),transparent);animation:scrollAnim 1.5s ease-in-out infinite;}
 @keyframes scrollAnim{0%{opacity:1;transform:scaleY(1) translateY(0);}100%{opacity:0;transform:scaleY(.5) translateY(18px);}}
  
-/* ══════════════════════════════════════
-   ABOUT
-══════════════════════════════════════ */
+/* ABOUT */
 .about-grid{display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:start;margin-top:2rem;}
 .about-left p{color:var(--text-2);margin-bottom:1rem;line-height:1.8;}
 .about-left strong{color:var(--p3);}
@@ -217,9 +210,8 @@ em.grad-text{font-style:italic;}
 .acard h4{font-size:.95rem;font-weight:700;margin-bottom:.4rem;}
 .acard p{font-size:.85rem;color:var(--text-2);line-height:1.7;}
  
-/* ══════════════════════════════════════
-   SKILLS
-══════════════════════════════════════ */
+/* SKILLS */
+
 .skills{background:radial-gradient(ellipse at 80% 50%,rgba(157,80,187,.04) 0%,transparent 70%);}
 .skills-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1.5rem;}
 .sg{padding:1.75rem;transition-delay:var(--d,0s);}
@@ -244,9 +236,8 @@ em.grad-text{font-style:italic;}
 .pill-gold{background:rgba(252,209,22,.1);border-color:rgba(252,209,22,.28);color:var(--y);font-weight:700;}
 .pill-p{background:rgba(157,80,187,.1);border-color:rgba(157,80,187,.22);color:var(--p3);}
  
-/* ══════════════════════════════════════
-   PROJECTS
-══════════════════════════════════════ */
+/* PROJECTS */
+
 .projects{background:rgba(157,80,187,.02);}
  
 /* ── Project Image Placeholder ── */

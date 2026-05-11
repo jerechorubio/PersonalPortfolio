@@ -1,12 +1,8 @@
-/* ══════════════════════════════════════
-   script.js — Portfolio
-   ══════════════════════════════════════ */
+//script.js — Portfolio
  
 'use strict';
  
-/* ────────────────────────────────────────
-   1. DARK / LIGHT THEME TOGGLE
-──────────────────────────────────────── */
+//1. DARK / LIGHT THEME TOGGLE
 (function initTheme() {
   const btn  = document.getElementById('themeToggle');
   const html = document.documentElement;
@@ -25,9 +21,9 @@
 })();
  
  
-/* ────────────────────────────────────────
-   2. CUSTOM CURSOR
-──────────────────────────────────────── */
+
+   //2. CUSTOM CURSOR
+
 (function initCursor() {
   const cursor   = document.getElementById('cursor');
   const follower = document.getElementById('cursorFollower');
@@ -66,9 +62,8 @@
 })();
  
  
-/* ────────────────────────────────────────
-   3. NAVBAR — scroll + hamburger
-──────────────────────────────────────── */
+  //3. NAVBAR — scroll + hamburger
+
 (function initNavbar() {
   const navbar     = document.getElementById('navbar');
   const hamburger  = document.getElementById('hamburger');
@@ -96,9 +91,8 @@
 })();
  
  
-/* ────────────────────────────────────────
-   4. TYPING EFFECT
-──────────────────────────────────────── */
+  //4. TYPING EFFECT
+
 (function initTyping() {
   const el = document.getElementById('typingText');
   if (!el) return;
@@ -132,10 +126,8 @@
   setTimeout(step, 900);
 })();
  
- 
-/* ────────────────────────────────────────
-   5. SCROLL REVEAL (Intersection Observer)
-──────────────────────────────────────── */
+  //5. SCROLL REVEAL (Intersection Observer)
+
 (function initReveal() {
   const selectors = '.reveal-fade,.reveal-up,.reveal-left,.reveal-right,.reveal-scale,.reveal-tl,.reveal-bento';
   const targets   = document.querySelectorAll(selectors);
@@ -153,10 +145,8 @@
   targets.forEach(el => io.observe(el));
 })();
  
- 
-/* ────────────────────────────────────────
-   6. SKILL BAR ANIMATION
-──────────────────────────────────────── */
+  //6. SKILL BAR ANIMATION
+
 (function initSkillBars() {
   const fills = document.querySelectorAll('.sb-fill');
   if (!fills.length) return;
@@ -174,9 +164,8 @@
 })();
  
  
-/* ────────────────────────────────────────
-   7. TIMELINE SPINE ANIMATION
-──────────────────────────────────────── */
+  //7. TIMELINE SPINE ANIMATION
+
 (function initSpine() {
   const spine = document.getElementById('tlSpine');
   if (!spine) return;
@@ -186,10 +175,8 @@
   io.observe(spine);
 })();
  
- 
-/* ────────────────────────────────────────
-   8. MAGNETIC BUTTON EFFECT
-──────────────────────────────────────── */
+  //8. MAGNETIC BUTTON EFFECT
+
 (function initMagnetic() {
   const btns = document.querySelectorAll('.magnetic');
   btns.forEach(btn => {
@@ -205,10 +192,9 @@
   });
 })();
  
- 
-/* ────────────────────────────────────────
-   9. PROJECT FILTER
-──────────────────────────────────────── */
+
+  //9. PROJECT FILTER
+
 (function initFilter() {
   const btns  = document.querySelectorAll('.fbtn');
   const cards = document.querySelectorAll('.proj-card');
@@ -241,9 +227,8 @@
 })();
  
  
-/* ────────────────────────────────────────
-   10. COUNTER ANIMATION — hero stats
-──────────────────────────────────────── */
+  //10. COUNTER ANIMATION — hero stats
+
 (function initCounters() {
   const counters = document.querySelectorAll('.hs-n[data-target]');
   if (!counters.length) return;
@@ -270,9 +255,8 @@
 })();
  
  
-/* ────────────────────────────────────────
-   11. PARALLAX ORBS (mouse follow)
-──────────────────────────────────────── */
+  //11. PARALLAX ORBS (mouse follow)
+
 (function initOrbs() {
   const orbs = document.querySelectorAll('.orb');
   if (!orbs.length || window.matchMedia('(max-width:768px)').matches) return;
@@ -289,10 +273,9 @@
   }, { passive: true });
 })();
  
- 
-/* ────────────────────────────────────────
-   12. CARD TILT EFFECT
-──────────────────────────────────────── */
+
+  //12. CARD TILT EFFECT
+
 (function initTilt() {
   const cards = document.querySelectorAll('.proj-card,.cert-card');
   if (window.matchMedia('(max-width:768px)').matches) return;
@@ -313,9 +296,8 @@
 })();
  
  
-/* ────────────────────────────────────────
-   13. SCROLL SPY — highlight active nav link
-──────────────────────────────────────── */
+  //13. SCROLL SPY — highlight active nav link
+
 (function initScrollSpy() {
   const sections = document.querySelectorAll('section[id]');
   const links    = document.querySelectorAll('.nav-links a,.mobile-menu a');
@@ -335,9 +317,8 @@
 })();
  
  
-/* ────────────────────────────────────────
-   14. BACK TO TOP BUTTON
-──────────────────────────────────────── */
+  //14. BACK TO TOP BUTTON
+
 (function initBackTop() {
   const btn = document.getElementById('backTop');
   if (!btn) return;
@@ -352,9 +333,9 @@
 })();
  
  
-/* ────────────────────────────────────────
-   15. SMOOTH ANCHOR SCROLL
-──────────────────────────────────────── */
+
+   //15. SMOOTH ANCHOR SCROLL
+
 (function initSmoothScroll() {
   document.querySelectorAll('a[href^="#"]').forEach(link => {
     link.addEventListener('click', e => {
@@ -367,9 +348,8 @@
 })();
  
  
-/* ────────────────────────────────────────
-   16. CONTACT FORM VALIDATION & SUBMIT
-──────────────────────────────────────── */
+
+   //16. CONTACT FORM VALIDATION & SUBMIT
 (function initContactForm() {
   const form    = document.getElementById('contactForm');
   if (!form) return;
@@ -428,9 +408,8 @@
 })();
  
  
-/* ────────────────────────────────────────
-   17. PAGE LOAD FADE IN
-──────────────────────────────────────── */
+  //17. PAGE LOAD FADE IN
+
 (function initLoad() {
   document.body.style.opacity = '0';
   document.body.style.transition = 'opacity 0.45s ease';
@@ -443,9 +422,8 @@
 })();
  
  
-/* ────────────────────────────────────────
-   Dev Signature
-──────────────────────────────────────── */
+  //Dev Signature
+
 console.log(
   '%c⚡ Portfolio — Dev/Leader\n%cMerging Systems with Leadership',
   'color:#FCD116;font-weight:800;font-size:14px;background:#0D0D0D;padding:8px 14px;border-radius:6px 6px 0 0;display:block;',
